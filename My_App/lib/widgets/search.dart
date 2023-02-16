@@ -2,13 +2,10 @@ import 'package:flutter/material.dart';
 
 Widget search() {
   return IconButton(
-    icon: Icon(Icons.search),
     color: Colors.white,
+    icon: Icon(Icons.search),
     onPressed: () {
-      // showSearch(
-      //     context: context,
-      //     delegate: CustomSearch()
-      // );
+      // Navigator.push(context, MaterialPageRoute(builder: (context) => [])),
     },
     splashRadius: 17,
     splashColor: Colors.lightBlueAccent,

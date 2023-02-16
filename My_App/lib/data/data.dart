@@ -1,6 +1,9 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
 import '../models/cateories_model.dart';
 
-String apiKEY = "[API_KEY]";
+String apiKEY = "563492ad6f91700001000001d11322e6c93e450db803e83814df0c9c";
 
 List<CategorieModel> getCategories() {
   List<CategorieModel> categories = [];
@@ -57,4 +60,21 @@ List<CategorieModel> getCategories() {
   categorieModel = new CategorieModel();
 
   return categories;
+}
+
+class NavigationItem {
+
+  IconData iconData;
+
+  NavigationItem(this.iconData);
+
+}
+
+List<NavigationItem> getNavigationItemList(){
+  return <NavigationItem>[
+    NavigationItem(Icons.home),
+    NavigationItem(Icons.local_library),
+    NavigationItem(Icons.book),
+    NavigationItem(Icons.person),
+  ];
 }

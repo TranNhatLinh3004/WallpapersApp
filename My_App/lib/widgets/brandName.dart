@@ -21,9 +21,9 @@ Widget brandName() {
             fontWeight: FontWeight.bold),
       ),
       SizedBox(
-        width: 48,
+        width: 40,
       ),
-     search()
+     // search()
     ],
   );
 }
